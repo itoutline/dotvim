@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/itoutline/.vim'
+let g:netrw_dirhist_2='/home/itoutline/.vim/bundle'
+let g:netrw_dirhist_3='/home/itoutline/.vim/bundle/vim-airline'
+let g:netrw_dirhist_4='/home/itoutline/blog/octopress/source'
+let g:netrw_dirhist_5='/home/itoutline/blog/octopress/source/blog'
+let g:netrw_dirhist_6='/home/itoutline/blog/octopress/source/blog/archives'
+let g:netrw_dirhist_7='/home/itoutline/blog/octopress/source/blog'
+let g:netrw_dirhist_8='/home/itoutline/blog/octopress/source'
+let g:netrw_dirhist_9='/home/itoutline/blog/octopress/source/_posts'
