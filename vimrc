@@ -57,6 +57,7 @@ set wildmenu
 set incsearch
 set ignorecase
 set hlsearch
+set list
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " =>Moving Moving around, tabs, windows and buffers
