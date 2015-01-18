@@ -1,3 +1,4 @@
+let g:airline_powerline_fonts = 1
 set nocompatible
 "pathogen load
 execute pathogen#infect()
@@ -23,18 +24,14 @@ set autoindent
 set shiftround
 set softtabstop=4
 set backspace=indent,eol,start
-set smarttab
 set number
 set wrap
-set linebreak
 " Linebreak on 500 characters
-set lbr
+set linebreak
 set tw=500
 set nrformats-=octal
 set ttimeout
 set ttimeoutlen=300
-"F2 toggle paste mode
-"set pastetoggle=<F2>
 set showmode
 "file and display encoding
 set fileencoding=utf-8
@@ -58,9 +55,9 @@ set incsearch
 set ignorecase
 set hlsearch
 set list
-
+set pastetoggle=<F2>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" =>Moving Moving around, tabs, windows and buffers
+" Moving Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
@@ -77,6 +74,7 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Useful mappings for managing tabs
+map <leader>t :tabnext<cr>
 map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
@@ -134,16 +132,24 @@ if !&sidescrolloff
 endif
 set display+=lastline
 
+set hidden
+"set title               " change the terminal's title
+
 inoremap <c-u> <c-g>u<c-u>
 inoremap <c-w> <c-g>u<c-w>
-
-
-" mappings
-" -----------------------------------------------------------------------------
 nnoremap \ ,
 nnoremap <leader>ev :tabe $MYVIMRC<cr>
 nnoremap <leader>sv :so $MYVIMRC<cr>
 "nnoremap <F2> :set invpaste paste?<CR>
-nnoremap <F2> :setlocal paste!<CR>
+"nnoremap <F2> :setlocal paste!<CR>
 nnoremap <F3> :set hlsearch!<CR>
 
+"Vim. Live it.
+inoremap <up> <nop>
+vnoremap <up> <nop>
+inoremap <down> <nop>
+vnoremap <down> <nop>
+inoremap <left> <nop>
+vnoremap <left> <nop>
+inoremap <right> <nop>
+vnoremap <right> <nop>

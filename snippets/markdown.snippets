@@ -1,0 +1,22 @@
+# snippets for making snippets :)
+snippet snip
+	snippet ${1:trigger}
+		${0}
+snippet msnip
+	snippet ${1:trigger} ${2:description}
+		${0}
+snippet v
+	{VISUAL}
+snippet $
+	${${1:1}:${0:text}}
+
+snippet o_img
+	{% img ${1:left/right/center} /images/${2} ${3:800} %}
+
+snippet o_code_with_source_file
+	{% include_code lang:${1:bash} ${2:file_name %}
+
+snippet o_code_codeblock_full
+	{% codeblock lang:${1:bash} ${2:title} ${3:url} ${4:url_desc} %}
+		
+	{% endcodeblock %}
