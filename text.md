@@ -1,0 +1,1 @@
+---layout: posttitle: "Homebrew Cask"date: 2015-01-18 18:05:54 +0100comments: truecategories: osx homebrew---Całkiem przyjemne rozwiązanie 

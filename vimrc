@@ -5,7 +5,7 @@ execute pathogen#infect()
 syntax enable
 filetype plugin indent on
 "color scheme settings, TERM variable on console must be TERM=xterm-256color
-let g:solarized_termcolors=256
+"let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 let mapleader=","
@@ -92,6 +92,9 @@ autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
      \   exe "normal! g`\"" |
      \ endif
+" Remove trailing spaces from markdown files
+autocmd FileType markdown autocmd BufWritePre <buffer> :%s/\s\+$//e
+
 " Remember info about open buffers on close
 set viminfo^=%
 
@@ -153,3 +156,12 @@ inoremap <left> <nop>
 vnoremap <left> <nop>
 inoremap <right> <nop>
 vnoremap <right> <nop>
+
+
+" indent_guides {
+    if isdirectory(expand("~/.vim/bundle/vim-indent-guides/"))
+        let g:indent_guides_start_level = 2
+        let g:indent_guides_guide_size = 1
+        let g:indent_guides_enable_on_vim_startup = 1
+    endif
+" }
