@@ -148,14 +148,14 @@ nnoremap <leader>sv :so $MYVIMRC<cr>
 nnoremap <F3> :set hlsearch!<CR>
 
 "Vim. Live it.
-inoremap <up> <nop>
-vnoremap <up> <nop>
-inoremap <down> <nop>
-vnoremap <down> <nop>
-inoremap <left> <nop>
-vnoremap <left> <nop>
-inoremap <right> <nop>
-vnoremap <right> <nop>
+"inoremap <up> <nop>
+"vnoremap <up> <nop>
+"inoremap <down> <nop>
+"vnoremap <down> <nop>
+"inoremap <left> <nop>
+"vnoremap <left> <nop>
+"inoremap <right> <nop>
+"vnoremap <right> <nop>
 
 
 " indent_guides {
